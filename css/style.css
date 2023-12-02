@@ -376,9 +376,9 @@ padding-bottom: var(--main-padding-bottom);
 display: grid;
 grid-template-columns: repeat(auto-fill ,minmax(250px , 1fr));gap: 40px;
 }
-@media (max-width:767px) {
+@media (max-width:400px) {
 .articles .container{
-    grid-template-columns: repeat(auto-fill ,minmax(100px , 1fr));gap: 40px;
+    grid-template-columns: repeat(auto-fill ,minmax(100px , 1fr));
 
 }
 }
