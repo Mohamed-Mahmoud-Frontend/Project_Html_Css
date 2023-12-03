@@ -223,25 +223,25 @@ ul {
 
 
 
-.landing{
-    position: relative;
-    height: calc(100vh - 72px);
-}
 
+.landing {
+  position: relative;
+}
 .landing::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 72px);
-left: 0;
-
-    top: -70px;
-    transform: skewY(-6deg);
-    background: #eee;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  background-color: #ececec;
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: top left;
 }
-
 .landing .container {
+background-color: transparent;
+
     position: relative;
     display: flex;
     height: calc(100vh - 72px);
