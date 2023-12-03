@@ -478,6 +478,140 @@ opacity: 1;
 transform: rotate(6deg) scale(1.1);
 
 }
+
+.features{
+padding-top: var(--main-padding-top);
+padding-bottom: var(--main-padding-bottom);
+position: relative;
+ }
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+  gap: 40px;
+  background-color: white;
+  }
+ .features .box{
+text-align: center;
+
+
+
+}
+.img-holder{
+  position: relative;
+overflow: hidden;
+ }
+ .img-holder::after{
+content: '';
+position: absolute;
+bottom: 0;
+right: 0;
+border-style: solid;
+border-width: 0px 0px 170px 500px;
+border-color: transparent transparent white transparent;
+transition: var(--main-transition);
+}
+ .features .box:hover .img-holder::after{
+  border-width: 0px 500px 170px 0px;
+
+}
+ .features .box h2{
+  font-size: 40px;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+
+}
+ .features .box p{
+  line-height: 2;
+  font-size: 20px;
+  margin: 30px 0;
+  padding: 25px;
+  color: #888;
+}
+.features .box a {
+  border: 2px solid transparent;
+  font-size: 17px;
+  padding: 5px 20px;
+  font-weight: bold;
+transition: var(--main-transition);
+}
+ .features .box h2::after{
+content: '';
+position: absolute;
+bottom: -20px;
+left: 15px;
+width: calc(100% - 30px);
+height: 5px;
+}
+ .features .box.quality h2::after{
+background: #f44036;
+}
+ .features .box.quality a{
+  color: #f44036;
+  border-color: #f44036;
+  background: linear-gradient(to right, #f44036 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  }
+
+    .features .quality .img-holder::before {
+    background-color: rgb(244 64 54 / 60%);
+  }
+    .features .quality h2::after {
+    background-color: #f44036;
+  }
+  .features .quality h2{
+color: #f44036;
+  }
+
+    .features .time .img-holder::before {
+    background-color: rgb(0 150 136 / 60%);
+  }.features .time h2{
+color: #009688;
+  }
+    .features .time h2::after {
+    background-color: #009688;
+  }
+  .features .time a {
+    color: #009688;
+    border-color: #009688;
+    background: linear-gradient(to right, #009688 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+  }
+  .features .passion .img-holder::before {
+    background-color: rgb(3 169 244 / 60%);
+  }
+  .features .passion h2{
+color:  #03a9f4;
+  }
+  .features .passion h2::after {
+    background-color: #03a9f4;
+  }
+  .features .passion a {
+    color: #03a9f4;
+    border-color: #03a9f4;
+    background: linear-gradient(to right, #03a9f4 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+  }
+  .features .box:hover a {
+    background-position: left bottom;
+    color: white;
+  }
+
+.features .container .box{
+
+}
+.features .container .box .img-holder{
+
+}
+.features .container .box .img-holder img{
+max-width:  100%;
+
+
+}
+
 @keyframes flash {
 0% , 40%{
 opacity: 1;}
